@@ -78,4 +78,4 @@ def land_api_payload(landing_path: str, include_fixture: bool = True) -> str:
 
 
 # if __name__ == "__main__":
-#     land_api_payload("dbfs:/mnt/uc_volume/landing", include_fixture=True)
+#     land_api_payload("Volumes/aastha_project/bronze/api_landing/university_chapters/", include_fixture=True)

@@ -89,7 +89,8 @@ def university_chapters_silver():
             "row_number",
             F.row_number().over(
                 Window.partitionBy("chapter_id").orderBy(
-                    F.col("source_object_id").cast("long").desc_nulls_last()
+                    F.col("source_object_id").cast("long").desc_nulls_last(),
+                    F.col("ingested_at").desc_nulls_last(),
                 )
             ),
         )
