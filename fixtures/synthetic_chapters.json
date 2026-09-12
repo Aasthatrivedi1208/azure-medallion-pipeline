@@ -1,0 +1,79 @@
+{
+  "_comment": "SYNTHETIC fixture shaped exactly like an ArcGIS FeatureServer /query response. Seeded into Bronze so both DQ paths are observable even when the live API returns only clean rows. Every chapter_id here is in the CA-9xxx range and every chapter_name is prefixed SYNTHETIC so these rows are trivially distinguishable from real data.",
+  "objectIdFieldName": "OBJECTID",
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": { "wkid": 4326, "latestWkid": 4326 },
+  "exceededTransferLimit": false,
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 900001,
+        "ChapterID": "CA-9001",
+        "University_Chapter": "SYNTHETIC Clean Chapter",
+        "City": "Berkeley",
+        "State": "CA"
+      },
+      "geometry": { "x": -122.2727, "y": 37.8716 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 900002,
+        "ChapterID": "CA-9001",
+        "University_Chapter": "SYNTHETIC Clean Chapter (older duplicate)",
+        "City": "Berkeley",
+        "State": "CA"
+      },
+      "geometry": { "x": -122.2727, "y": 37.8716 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 900003,
+        "ChapterID": "CA-9002",
+        "University_Chapter": "SYNTHETIC Warning - literal UNKNOWN city",
+        "City": "unknown",
+        "State": "CA"
+      },
+      "geometry": { "x": -118.2437, "y": 34.0522 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 900004,
+        "ChapterID": "CA-9003",
+        "University_Chapter": "SYNTHETIC Warning - blank city",
+        "City": "   ",
+        "State": "CA"
+      },
+      "geometry": { "x": -117.1611, "y": 32.7157 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 900005,
+        "ChapterID": "CA-9101",
+        "University_Chapter": "SYNTHETIC Quarantine - latitude out of range",
+        "City": "Sacramento",
+        "State": "CA"
+      },
+      "geometry": { "x": -121.4944, "y": 999.0 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 900006,
+        "ChapterID": "CA-9102",
+        "University_Chapter": "SYNTHETIC Quarantine - non-numeric longitude",
+        "City": "Fresno",
+        "State": "CA"
+      },
+      "geometry": { "x": "not-a-number", "y": 36.7378 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 900007,
+        "ChapterID": "CA-9103",
+        "University_Chapter": "SYNTHETIC Quarantine - missing geometry",
+        "City": "Oakland",
+        "State": "CA"
+      },
+      "geometry": null
+    }
+  ]
+}
